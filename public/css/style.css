@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-horizontal  {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+h1 {
+    top: 50px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.quote {
+    margin: auto;
+    text-align: center;
+    top: 40px;
+}
+
+.panel{
+    width: 400px;
+    align-content: left;
+}
