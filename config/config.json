@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "q2x5dwrzz1p5ksca",
-    "password": "zkpw1a3gaw6xccj0",
-    "database": "pq9mhm4n7hm5wzr3",
-    "host": "hngomrlb3vfq3jcr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "helloalex",
+    "database": "todolist_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "mysql",
-    "host": "127.0.0.1",
+    "username": "q2x5dwrzz1p5ksca",
+    "password": "zkpw1a3gaw6xccj0",
+    "database": "pq9mhm4n7hm5wzr3",
+    "host": "hngomrlb3vfq3jcr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
