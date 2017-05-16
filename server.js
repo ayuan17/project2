@@ -30,12 +30,12 @@ app.use(express.static("./public"));
 // Routes =============================================================
 
 require("./routes/html-route.js")(app);
-<<<<<<< HEAD
+
 require("./routes/profile-todo-api-route.js")(app);
-=======
+
+
 var api = require("./routes/api-route.js");
 // require("./routes/profile-route.js")(app);
->>>>>>> 129b78bac7531c5470c4a0c6d1461a21fc5b7b77
 
 
 app.use("/api", api);
