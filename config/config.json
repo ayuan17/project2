@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": "helloalex",
-    "database": "todolist_db",
+    "username": "q2x5dwrzz1p5ksca",
+    "password": "zkpw1a3gaw6xccj0",
+    "database": "q2x5dwrzz1p5ksca",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -14,9 +14,9 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "q2x5dwrzz1p5ksca",
-    "password": "zkpw1a3gaw6xccj0",
-    "database": "q2x5dwrzz1p5ksca",
+    "username": "root",
+    "password": null,
+    "database": "mysql",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
