@@ -46,12 +46,33 @@
   </div>
 </form>
 
-  <div class="quote">
-            <p>Random motivational quote in here</p>
+  <div id="quote">
+      <blockquote id="motiv-quote"></blockquote>
         </div>
 
 </div>
 
+<script type="text/javascript">
+  $('#quote').click(function() {
+        $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?").done(update).fail(handleErr);
+    });
+    $.ajax({
+        url: "http://api.forismatic.com/api/1.0/",
+        jsonp: "jsonp",
+        dataType: "jsonp",
+        data: {
+            method: "getQuote",
+            lang: "en",
+            format: "jsonp"
+        }
+    }).done(function(result) {
+        var blockquote = $("#motiv-quote");
+        $("#motiv-quote").html(result.quoteText);
+        var cite = $("<cite>");
+        blockquote.append(cite);
+        cite.text(result.quoteAuthor);
+    });`
+</script>
 
 </body>
 </html>
