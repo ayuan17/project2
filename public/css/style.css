@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .form-horizontal  {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
 
 }
@@ -29,3 +33,14 @@ h1 {
     width: 400px;
     align-content: left;
 }
+
+#landing {
+    background-image: url(/images/AdobeStock_44873016.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -50,13 +50,13 @@ apiRouter.post("/user/signin", function(req, res) {
         console.log("No user found")
         res.status(400).json({
           "status" : "Invalid username or password"
-        })
+        }).redirect("/signin");
       } else {
         bcrypt.compare(req.body.password, user.password, function(err, valid) {
           if (err || !valid) {
             res.status(400).json({
               "status" : "Invalid username or password"
-            })
+            }).redirect("/signin");
           } else {
             var userToken = jwt.sign({
               exp: Math.floor(Date.now() / 1000) + (60 * 60),
