@@ -55,31 +55,24 @@
 
 
   <div id="quote">
-      <blockquote id="motiv-quote"></blockquote>
+      <!-- quotes will display in here -->
         </div>
 
 </div>
 
 <script type="text/javascript">
-  $('#quote').click(function() {
-        $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?").done(update).fail(handleErr);
-    });
-    $.ajax({
-        url: "http://api.forismatic.com/api/1.0/",
-        jsonp: "jsonp",
-        dataType: "jsonp",
-        data: {
-            method: "getQuote",
-            lang: "en",
-            format: "jsonp"
-        }
-    }).done(function(result) {
-        var blockquote = $("#motiv-quote");
-        $("#motiv-quote").html(result.quoteText);
-        var cite = $("<cite>");
-        blockquote.append(cite);
-        cite.text(result.quoteAuthor);
-    });`
+
+ var quote = [
+  "To live a creative life, we must lose our fear of being wrong. - Anonymous",
+  "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
+  "Only put off until tomorrow what you are willing to die having left undone. - Pablo Picasso"
+  ];
+
+ var randomNumber = Math.floor(Math.random() * (quote.length));
+      document.getElementById("quote").innerHTML = quote[randomNumber];
+
+
+
 </script>
 
 </body>
