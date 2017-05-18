@@ -19,9 +19,10 @@
   "homepage": "https://github.com/ayuan17/project2#readme",
   "dependencies": {
     "bcrypt": "^1.0.2",
-    "jsonwebtoken": "^7.4.0",
     "body-parser": "^1.17.1",
+    "bulma": "^0.4.1",
     "express": "^4.15.2",
+    "jsonwebtoken": "^7.4.0",
     "mysql": "^2.13.0",
     "sequelize": "^3.30.4"
   }
