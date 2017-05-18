@@ -19,6 +19,16 @@ module.exports = function(sequelize, DataTypes) {
            type: DataTypes.STRING,
            allownull: false
        }
-   });
+   },{
+    //Associates friends with User
+    classMethods:{
+      associate:function (models){
+      User.hasMany(models.Friend,{as:"Friends"})
+      }
+
+    }
+  });
+
+   
    return User;
 };
