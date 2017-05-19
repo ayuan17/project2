@@ -59,7 +59,7 @@
                 <ul class="list-group todo-list">
                     <li class="list-group-item new-item">
                         <form id="todo-form">
-                        <input class="new-item" placeholder="Add a Goal!" type="text" />
+                        <input class="new-item" placeholder="What do you want to achieve?" type="text" />
                         <button type="submit" class="button">Add a Goal</button>
                         </form>
                     </li>
@@ -69,13 +69,33 @@
             <!-- </div> -->
         </div>
 
-    <div class="column is-5 is-offset-1 box">
-      <div class="panel">
-        <h3 class="panel-heading">Friends</h3>
-      </div>
-      <div class="panel-block">
-        Friends here
-      </div>
+
+    <div class="column is-5">
+      <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="author-container">
+                    <h1>Friends List</h1>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="form-row">
+                                <form id="author-form">
+                                    <td colspan="4">
+                                        <input placeholder="Enter a name" id="author-name" type="text" />
+                                    </td>
+                                    <td><button type="submit" class="btn btn-success">Add Friend</button>
+                                    </td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
 
