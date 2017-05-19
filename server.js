@@ -16,7 +16,7 @@ var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
 // for password authentication
-var jwt = require("jsonwebtoken");
+// var jwt = require("jsonwebtoken");
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
@@ -34,28 +34,28 @@ require("./routes/html-route.js")(app);
 require("./routes/profile-todo-api-route.js")(app);
 
 
-var api = require("./routes/api-route.js");
+require("./routes/api-route.js");
 // require("./routes/profile-route.js")(app);
 
 
-app.use("/api", api);
-app.use("/api/secure", function (req, res, next) {
-  if (!req.header("Authorization")) {
-    res.status(401).json({ "status": "Not Authorized"});
-  } else {
-    jwt.verify(req.header("Authorization"), "randomsecretforsigningjwt", function(err, decoded) {
-      if (err) {
-        console.log("err", err)
-        res.status(401).json({ "status": "Not Authorized"});
-      } else {
-        console.log(decoded.data)
-        next();
-      }
-    });
-  }
-  // else res.status(401).json({})
-});
-app.use("/api/secure", api);
+// app.use("/api", api);
+// app.use("/api/secure", function (req, res, next) {
+//   if (!req.header("Authorization")) {
+//     res.status(401).json({ "status": "Not Authorized"});
+//   } else {
+//     jwt.verify(req.header("Authorization"), "randomsecretforsigningjwt", function(err, decoded) {
+//       if (err) {
+//         console.log("err", err)
+//         res.status(401).json({ "status": "Not Authorized"});
+//       } else {
+//         console.log(decoded.data)
+//         next();
+//       }
+//     });
+//   }
+//   // else res.status(401).json({})
+// });
+// app.use("/api/secure", api);
 
 
 // Syncing our sequelize models and then starting our express app
