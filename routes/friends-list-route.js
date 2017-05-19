@@ -1,10 +1,10 @@
 /**
- * Created by Jimmia Rowland 
+ * Created by Jimmia Rowland
  */
 
 
-// Dependencies
-// =============================================================
+Dependencies
+=============================================================
 var db = require("../models");
 var express = require("express");
 var friendRouter = express.Router();
@@ -43,7 +43,7 @@ var user = req.user;
 		//A friends' list is a list of associated friends.
 		res.json(friendsList);
 	});
-	});	
+	});
 
 	}else{
 	res.status(400).json({
@@ -73,11 +73,11 @@ var user = req.user;
 		//A friends' list is a list of associated friends.
 		res.json(friendsList);
 	});
-	});	
+	});
 
 
 
-    
+
 
 	}else{
 	res.status(400).json({
