@@ -21,7 +21,17 @@ h1 {
     margin: auto;
     padding: 10px;
     text-align: center;
+    font-family: 'Kanit', sans-serif !important;
 }
+
+h4 {
+    top: 50px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
 
 .quote {
     margin: auto;
@@ -34,6 +44,11 @@ h1 {
     align-content: left;
 }
 
+.home-container{
+    width:700px
+    margin:auto 0;
+}
+
 #landing {
     background-image: url(/images/AdobeStock_44873016.jpeg);
     background-size: cover;
@@ -43,4 +58,5 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 
