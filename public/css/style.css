@@ -46,4 +46,9 @@ h1 {
 
 .container{
   width: 960px;
+  /*margin-top: 20px;*/
+}
+.main{
+  margin-top: 20px;
+  /*border: solid;*/
 }
