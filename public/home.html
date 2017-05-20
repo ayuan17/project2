@@ -16,6 +16,12 @@
 </head>
 
 <body>
+<!-- <div class= "vid-container">
+    <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
+          <source src="/images/philfriedelectricbulbmp4.mp4">
+      </video>
+</div>
+ -->
     <div class="home-container">
         <div class='wrapper text-center'>
             <h1>act.</h1>
@@ -27,7 +33,28 @@
             <a type="button" class="btn btn-primary" href="/signin">Login</a>
             <a type="button" class="btn btn-primary" href="/register">Register</a>
         </div>
+
+        <div id="quote">
+          <!-- quotes display in here -->
+        </div>
     </div>
+
+
+
+<script type="text/javascript">
+
+ var quote = [
+  "To live a creative life, we must lose our fear of being wrong. - Anonymous",
+  "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
+  "Only put off until tomorrow what you are willing to die having left undone. - Pablo Picasso"
+  ];
+
+ var randomNumber = Math.floor(Math.random() * (quote.length));
+      document.getElementById("quote").innerHTML = quote[randomNumber];
+
+
+
+</script>
 </body>
 
 </html>

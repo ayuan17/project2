@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:600" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -51,15 +54,30 @@
   </div>
   <div class="field is-grouped">
     <div class="control">
-      <a class="button is-primary" href="/signin">Sign in</a>
+      <a class="button is-primary" href="/signin">Register</a>
     </div>
   </div>
 </form>
 
 
-        <div class="quote">
-            <p>Random motivational quote in here</p>
+        <div id="quote">
+          <!-- quotes display in here -->
         </div>
 </div>
+
+<script type="text/javascript">
+
+ var quote = [
+  "To live a creative life, we must lose our fear of being wrong. - Anonymous",
+  "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
+  "Only put off until tomorrow what you are willing to die having left undone. - Pablo Picasso"
+  ];
+
+ var randomNumber = Math.floor(Math.random() * (quote.length));
+      document.getElementById("quote").innerHTML = quote[randomNumber];
+
+
+
+</script>
 </body>
 </html>

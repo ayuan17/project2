@@ -17,6 +17,7 @@ body {
 }
 
 h1 {
+    color: white;
     font-size: 200px;
     top: 200px;
     margin: auto;
@@ -69,4 +70,20 @@ h4 {
   margin-top: 20px;
   /*border: solid;*/
 }
+
+/*video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+background-size: cover;
+}
+#video{
+height:100% ;
+width: 100%;
+}*/
 
