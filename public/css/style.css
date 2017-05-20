@@ -24,6 +24,7 @@ h1 {
     padding: 10px;
     text-align: center;
     font-family: 'Kanit', sans-serif !important;
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 h4 {
@@ -35,10 +36,11 @@ h4 {
 
 
 
-.quote {
+#quote {
     margin: auto;
     text-align: center;
-    top: 40px;
+    bottom: 100px;
+    color: black;
 }
 
 .panel{
@@ -71,19 +73,15 @@ h4 {
   /*border: solid;*/
 }
 
-/*video {
-position: fixed;
-right: 0;
-bottom: 0;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
-background-size: cover;
-}
-#video{
-height:100% ;
-width: 100%;
-}*/
+#key {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 2px;
+    bottom: 60px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
+}
+
+#buttons {
+    top: 50px;
+}
