@@ -7,6 +7,7 @@
 body {
     height: 100%;
     margin: 0;
+    background-color: honeydew;
 }
 
 .form-horizontal  {
@@ -63,13 +64,24 @@ h4 {
     align-items: center;
 }
 
+#prof-landing {
+    background-image: url(../images/bulletin.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
 
 .container{
   width: 960px;
+
   /*margin-top: 20px;*/
 }
 .main{
-  margin-top: 20px;
+  top: 50px;
+  height: 960px;
+  width: 960px;
+  /*text-align: center;*/
+    margin: 0 auto;
   /*border: solid;*/
 }
 
@@ -84,4 +96,29 @@ h4 {
 
 #buttons {
     top: 50px;
+}
+
+@font-face {
+    font-family: "sketch-font";
+    src: url("Sketch_Block.ttf");
+}
+
+.sketch {
+    font-family: sketch-font;
+    font-size: 35px;
+}
+
+.bgrnd_color {
+    background-color: lightgrey;
+
+}
+
+#column1 {
+    width: 960px;
+    height: 300px;
+
+}
+
+.delete, .complete {
+    float: right;
 }

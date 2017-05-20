@@ -138,12 +138,12 @@ $(document).ready(function() {
     newTodoInput.css("display", "none");
     newInputRow.append(newTodoInput);
     var newDeleteBtn = $("<button>");
-    newDeleteBtn.addClass("delete button is-primary");
-    newDeleteBtn.text("x");
+    newDeleteBtn.addClass("delete button is-primary icon");
+    newDeleteBtn.text("");
     newDeleteBtn.data("id", todo.id);
     var newCompleteBtn = $("<button>");
-    newCompleteBtn.addClass("complete button is-primary");
-    newCompleteBtn.text("✓");
+    newCompleteBtn.addClass("complete button is-primary icon");
+    newCompleteBtn.text("✔️");
     newInputRow.append(newDeleteBtn);
     newInputRow.append(newCompleteBtn);
     newInputRow.data("todo", todo);

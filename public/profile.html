@@ -14,22 +14,26 @@
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="prof-landing">
 
   <!-- nav bar start -->
-    <nav class="nav has-shadow">
-      <div class="container">
+
+
+      <nav class="nav has-shadow bgrnd_color">
+    <div class="container">
         <div class="nav-left">
           <a class="nav-item">
-            <img src="" alt="Act logo">
+            <img src="" class="sketch" alt="act.">
             <!-- <img src="http://bulma.io/images/bulma-logo.png" alt="Act logo"> -->
           </a>
           <!-- <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
           <a class="nav-item is-tab is-hidden-mobile">Features</a>
           <a class="nav-item is-tab is-hidden-mobile">Pricing</a> -->
-          <a class="nav-item is-tab is-hidden-mobile">About</a>
+          <!-- <a class="nav-item is-tab is-hidden-mobile">About</a> -->
         </div>
         <span class="nav-toggle">
           <span></span>
@@ -40,7 +44,7 @@
           <!-- <a class="nav-item is-tab is-hidden-tablet is-active">Home</a>
           <a class="nav-item is-tab is-hidden-tablet">Features</a>
           <a class="nav-item is-tab is-hidden-tablet">Pricing</a> -->
-          <a class="nav-item is-tab is-hidden-tablet">About</a>
+          <!-- <a class="nav-item is-tab is-hidden-tablet">About</a> -->
           <!-- <a class="nav-item is-tab">
             <figure class="image is-16x16" style="margin-right: 8px;">
               <img src="http://bulma.io/images/jgthms.png">
@@ -56,14 +60,14 @@
 
 <!-- goals section -->
   <div class="container main">
-    <div class="columns">
+    <div id="column1" class="columns">
         <div class="column is-4 box">
             <!-- <div class="col-md-6 col-md-offset-3"> -->
                 <ul class="list-group todo-list">
                     <li class="list-group-item new-item">
                         <form id="todo-form">
-                        <input class="new-item" placeholder="What do you want to achieve?" type="text" />
-                        <button type="submit" class="button">Add a Goal</button>
+                        <input class="new-item" placeholder="List your goal" type="text" />
+                        <button type="submit" class="button">Add Goal</button>
                         </form>
                     </li>
                     <span class="todo-container">
@@ -96,25 +100,25 @@
             </form>
 
         </div> -->
-        <a class="panel-block is-active" href="#">
+        <a class="panel-block is-active" href="#" style="background-color:white">
           <span class="panel-icon">
             <i class="fa fa-book"></i>
           </span>
           Alex
         </a>
-        <a class="panel-block" href="#">
+        <a class="panel-block" href="#" style="background-color:white">
           <span class="panel-icon">
             <i class="fa fa-book"></i>
           </span>
           Keythe
         </a>
-        <a class="panel-block" href="#">
+        <a class="panel-block" href="#" style="background-color:white">
           <span class="panel-icon">
             <i class="fa fa-book"></i>
           </span>
           Jimmia
         </a>
-        <a class="panel-block" href="#">
+        <a class="panel-block" href="#" style="background-color:white">
           <span class="panel-icon">
             <i class="fa fa-book"></i>
           </span>
@@ -123,6 +127,8 @@
       </div>
     </div>
 <!-- end of friends section -->
+<br>
+<!-- text-box -->
 
     <!-- <div>
             <div class="col-md-8 col-md-offset-2">
@@ -154,6 +160,14 @@
 
 
     </div>
+
+<div id="textarea">
+<form>
+  <textarea rows='15' cols='150' placeholder="Insert comments">
+  </textarea>
+</form>
+</div>
+
   </div>
     <!-- Custom Script -->
     <script src="js/profile.js" type="text/javascript">
