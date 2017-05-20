@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   // This function grabs todos from the database and updates the view
   function getTodos() {
-    $.get("/api/todos", function(data) {
+    $.get("/api/goal", function(data) {
       console.log("Todos", data);
       todos = data;
       initializeRows();
@@ -41,7 +41,7 @@ $(document).ready(function() {
     var id = $(this).data("id");
     $.ajax({
       method: "DELETE",
-      url: "/api/todos/" + id
+      url: "/api/goal/" + id
     })
     .done(function() {
       getTodos();
@@ -99,7 +99,7 @@ $(document).ready(function() {
   function updateTodo(todo) {
     $.ajax({
       method: "PUT",
-      url: "/api/todos",
+      url: "/api/goal",
       data: todo
     })
     .done(function() {
@@ -165,7 +165,7 @@ $(document).ready(function() {
     };
 
     // Posting the new todo, calling getTodos when done
-    $.post("/api/todos", todo, function() {
+    $.post("/api/goal", todo, function() {
       getTodos();
     });
     newItemInput.val("");

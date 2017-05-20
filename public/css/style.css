@@ -17,7 +17,8 @@ body {
 }
 
 h1 {
-    top: 50px;
+    font-size: 200px;
+    top: 200px;
     margin: auto;
     padding: 10px;
     text-align: center;
